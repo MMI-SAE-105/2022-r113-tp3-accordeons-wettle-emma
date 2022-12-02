@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+      .id {
+        position: relative;
+        height: 10px;
+        width: 10px;
+      }
+
+      .role {
+        position: absolute;
+        opacity: 0;
+
+      }
+    </style>
   </head>
   <body>
     <h1>Onglets</h1>
+    <div id="onglets" x-data="{ouvert : 1,}"
+
+     <ul role="tablist">
+      <li role="tab">Onglet 1</li>
+      <li role="tab">Onglet 2</li>
+      <li role="tab">Onglet 3</li>
+    </ul>
+
+     <div>
+      <div role="tabpanel" x-show="ouvert === 1">
+        <h1>Panneau 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate magnam cum voluptates modi vitae ipsa sapiente iste sunt totam. Nobis pariatur sed modi ut vel quasi beatae maxime velit dolore!</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 2">
+        <h1>Panneau 2</h1>
+        <p>Maiores numquam eaque delectus, voluptatem, quibusdam quia quam, expedita sint iste repellat voluptates labore sed ab veritatis saepe in laboriosam similique molestiae reiciendis placeat. Quod fugit illo animi deserunt explicabo.</p>
+      </div>
+      <div role="tabpanel" x-show="ouvert === 3">
+        <h1>Panneau 3</h1>
+        <p>Neque repudiandae nobis qui voluptatibus recusandae. Nemo, modi? Doloremque illo maxime aut officia vero eaque asperiores non sequi. Deleniti sunt magnam sit quibusdam numquam, aspernatur ad eum ex eaque quas.</p>
+      </div>
+     </div>>
+     
   </body>
 </html>
